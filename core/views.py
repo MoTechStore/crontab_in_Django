@@ -15,6 +15,7 @@ def dictfetchall(cursor):
 
 
 def index(request):
+    """
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM feedback")
     feed = dictfetchall(cursor)
@@ -28,4 +29,6 @@ def index(request):
     context = {'feed':feed, 'emp':emp}
     
     return render(request, 'core\index.html', context)
+    """
+    return HttpResponse('Hello Django')
 
