@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
 
 
-CRONJOBS = [('1 * * * *', 'motech.cron.my_cron_job')]
+CRONJOBS = [('* * * * *', 'motech.cron.my_cron_job')]
 
 
 
